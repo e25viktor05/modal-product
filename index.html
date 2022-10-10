@@ -20,18 +20,32 @@
   </head>
   <body>
     
-   
+   <!-- start -->
 
     
-    <div class="" >
+    <div class="backdrop" >
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close> <svg class="modal-close-btn-icon" width="11" height="11"> <use href="./images/sprite.svg#krestik"></use>
-        </svg> 
+        <button type="button" class="modal-close-btn" data-modal-close> <svg class="mobile-menu-close-icon" width="20" height="20">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
       </button>
       <form class="">
            
       <p class="">Chololate icecream</p>
-      <img src="./images/icecream" alt="">
+      <div>
+        <picture>
+                <source srcset="./images/desk-modal-ingradients-pict-1-1x.png 1x,
+              ./images/desk-modal-ingradients-pict-1-2x.png 2x"
+               media="(min-width: 1200px)">
+               <source srcset="./images/mob-modal-ingradients-pict-1-1x.png 1x,
+              ./images/mob-modal-ingradients-pict-1-2x.png 2x"
+               media="(max-width: 1199px)">
+<img src="./images/mob-modal-ingradients-pict-1-1x.png" alt="ice-cream-pic" class="">
+             
+              </picture>   
+         
+      </div>
+     
       <ul class="">
         <li class="">
           <p class="">320</p>
@@ -80,8 +94,8 @@
         </li>   
       </ul>
     
-        <lable class="" 
-     <!-- <span class="">name</span>  -->
+        <!-- <lable class="" 
+     <span class="">name</span> 
       <span class="">
         <input 
           type="text" 
@@ -90,19 +104,40 @@
           required pattern="^[a-zA-Zа-яА-Я]+" 
           minlength="2"> 
       </span>
-    </lable>
+    </lable> -->
    
 
+ <lable class="">  
+          <textarea 
+          
+          name=""   
+          class="" 
+          placeholder="name"></textarea>
+        </lable>
 
-    <lable class="">
-          <!-- <span class="">phone</span> -->
+
+      
+
+
+
+    <!-- <lable class="">
+          <span class="">phone</span>
       <span class="">
           <input type="tel" name="user-phone" class="" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
           title="xxx-xxx-xx-xx">   
       </span>
-        </lable>
+        </lable> -->
 
-        
+         
+
+        <lable class="">
+        </lable>
+          <textarea 
+          type="tel"
+          name="user-phone"   
+          class="" 
+          placeholder="phone"></textarea>
+        </lable>
 
         <lable class="">
           <!-- <span class="">comment</span> -->
